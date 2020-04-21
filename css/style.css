@@ -1,0 +1,177 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+/*Navigation Styles*/
+
+.nav-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    
+    font-family: 'Yeseva One', cursive;
+    z-index: 999;
+}
+
+.name{
+    color:#D8977F;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+nav{
+    position: relative;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: inline-block;
+}
+
+nav a {
+    color: #D8977F;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color: #014040;
+}
+
+/*Contact Me*/
+
+h1{
+    color:#D8977F;
+    font-size: 30px;
+    font-family: 'Yeseva One', cursive;
+    text-align:center;
+    margin-top:70px;
+}
+
+
+.insta{
+    display:grid;
+    right: -480px;
+    margin-top: 50px;
+    position:relative;
+    height:100px;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "instapic instauser"
+}
+
+.insta-logo{
+    grid-area: instapic;
+    background-image: url(../images/insta.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+}
+
+.insta-username{
+    grid-area: instauser;
+    margin: 40px;
+    color: #025373;
+    font-family: 'Lora', serif;
+    font-size: 34px;
+    text-align: center;
+}
+
+
+.linkedin{
+    display:grid;
+    right: -480px;
+    margin-top: 50px;
+    position:relative;
+    height:100px;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "linkedinpic linkedinuser"
+}
+
+.linkedin-logo{
+    grid-area: linkedinpic;
+    background-image: url(../images/linkedin.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+}
+
+.linkedin-username{
+    grid-area: linkedinuser;
+    color: #025373;
+    font-family: 'Lora', serif;
+    font-size: 34px;
+    margin: 40px;
+    text-align: center;
+}
+
+.email{
+    display:grid;
+    right: -480px;
+    margin-top: 90px;
+    position:relative;
+    height:100px;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "emailpic emailuser"
+}
+
+.email-logo{
+    grid-area: emailpic;
+    background-image: url(../images/email.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+}
+
+.email-username{
+    margin:40px;
+    grid-area: emailuser;
+    color: #025373;
+    font-family: 'Lora', serif;
+    font-size: 34px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px){
+
+.email, .insta, .linkedin{
+   right: -40px;
+}
+
+.insta-username{
+    font-size: 20px;
+}
+
+.linkedin-username{
+    font-size: 20px;
+}
+
+.email-username{
+    font-size: 20px;
+}
+}
